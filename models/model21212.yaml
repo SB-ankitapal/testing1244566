@@ -1,0 +1,10 @@
+title: model21212
+x-stoplight:
+  id: 5dfswcls7ocep
+type: object
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: 4t4cevl6c2xtm
+description: model
