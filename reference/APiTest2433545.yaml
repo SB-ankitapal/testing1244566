@@ -198,7 +198,7 @@ paths:
               type: object
               properties:
                 testing:
-                  type: string
+                  type: number
                   x-stoplight:
                     id: z0a6ezvu5sz5y
                 Lap:
