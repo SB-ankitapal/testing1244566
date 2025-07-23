@@ -180,7 +180,18 @@ paths:
     get:
       summary: Your GET endpoint
       tags: []
-      responses: {}
+      responses:
+        '101':
+          description: Switching Protocols
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  test:
+                    type: string
+                    x-stoplight:
+                      id: f5f418xz2xkeu
       operationId: get-users-time-test-Lap
       x-stoplight:
         id: biq7yzmeep93q
