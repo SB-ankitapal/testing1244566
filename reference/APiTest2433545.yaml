@@ -155,6 +155,56 @@ paths:
       description: Create a new user.
       x-stoplight:
         id: ybwndsjp4mpwg
+  '/users/{time}/{test}/Lap':
+    parameters:
+      - schema:
+          type: string
+        name: time
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: test
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: time
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: test
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-users-time-test-Lap
+      x-stoplight:
+        id: biq7yzmeep93q
+    put:
+      summary: Your PUT endpoint
+      tags: []
+      responses: {}
+      operationId: put-users-time-test-Lap
+      x-stoplight:
+        id: k2n7yyqjrxj92
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                testing:
+                  type: string
+                  x-stoplight:
+                    id: z0a6ezvu5sz5y
+                Lap:
+                  type: string
+                  x-stoplight:
+                    id: 4fm17fowrxw3r
 components:
   schemas:
     User:
