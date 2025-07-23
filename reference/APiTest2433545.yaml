@@ -25,17 +25,16 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
-              examples:
-                Get User Alice Smith:
-                  value:
-                    id: 142
-                    firstName: Alice
-                    lastName: Smith
-                    email: alice.smith@gmail.com
-                    dateOfBirth: '1997-10-31'
-                    emailVerified: true
-                    signUpDate: '2019-08-24'
+                type: object
+                properties:
+                  testing:
+                    type: string
+                    x-stoplight:
+                      id: j254v3m7ch3yn
+                  test2:
+                    type: string
+                    x-stoplight:
+                      id: qszci0yip7edt
         '404':
           description: User Not Found
       operationId: get-users-userId
@@ -82,6 +81,10 @@ paths:
                   description: 'If a new email is given, the user''s email verified property will be set to false.'
                 dateOfBirth:
                   type: string
+                refder:
+                  type: number
+                  x-stoplight:
+                    id: pre17onlk6qso
             examples:
               Update First Name:
                 value:
